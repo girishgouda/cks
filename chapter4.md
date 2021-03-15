@@ -39,3 +39,20 @@ TXT is used to isolate the memory used by guest virtual machines. A guest VM cou
 
 kernel.modules disabled
 System administrators can use a one-way method to block module loading after the system has booted and all modules have been loaded. This mechanism consists in writing "1" to kernel.modules_disabled. This requires root or CAP_SYS_MODULE capabilities. No other module-related operations will be allowed from that point on.
+
+
+ wget https://training.linuxfoundation.org/cm/LFS260/LFS260_V2021-03-05_SOLUTIONS.tar.xz --user=LFtraining --password=Penguin2014
+
+    tar -xvf LFS260_V2021-03-05_SOLUTIONS.tar.xz
+
+
+ sudo sh -c "useradd -m -s /bin/bash dan ; echo "dan:danpassword" | chpasswd"
+
+sudo sh -c "useradd -m -s /bin/bash paul ; echo "paul:paulpassword" | chpasswd"
+
+
+
+ wget https://training.linuxfoundation.org/cm/LFS260/LFS260_V2021-03-05_SOLUTIONS.tar.xz --user=LFtraining --password=Penguin2014
+
+ cp /home/student/LFS260/SOLUTIONS/s_04/gatekeeper.yaml .
+
